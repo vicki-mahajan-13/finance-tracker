@@ -1,2 +1,4 @@
 <h1>Welcome to Your Application</h1>
 <p>This is the homepage of your application.</p>
+
+<%= link_to 'Sign out', destroy_user_session_path, data: { turbo_method: :delete } %>
