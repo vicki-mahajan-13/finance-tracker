@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: finance-tracker
+    env: ruby
+    buildCommand: bundle install && yarn install && bundle exec rake assets:precompile && bundle exec rake db:migrate
+    startCommand: bundle exec puma -C config/puma.rb
+    envVars:
+      - key: DATABASE_URL
+        value: "YOUR_DATABASE_URL"  # Replace with your actual database URL
+      - key: SECRET_KEY_BASE
+        generateValue: true
