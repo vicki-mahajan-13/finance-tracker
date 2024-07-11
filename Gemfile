@@ -15,7 +15,7 @@ group :production do
 end
 
 
-
+gem 'alphavantage'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
@@ -33,6 +33,7 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
+
 
 gem 'importmap-rails'
 gem 'turbo-rails'
